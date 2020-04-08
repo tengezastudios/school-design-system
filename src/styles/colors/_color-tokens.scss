@@ -1,0 +1,81 @@
+// all color variables used across the design system
+
+//UI
+$ui-background: hsl(0,0,100); //primary page bg
+$ui-01: hsl(0,0,90); //container background and secondary page background
+$ui-02: hsl(0,0,100); //container background for $ui-01
+$ui-03: hsl(0,0,80); //subtle borders and tertiary bg
+$ui-04: hsl(0,0,50); //medium contrast border
+$ui-05: hsl(0,0,10); //high contrast border and emphasis elements
+
+//TEXT 
+$text-01: hsl(0,0,10); //primary text | header text | body text | hover text for $text-02
+$text-02: hsl(0,0,30); //secondary text | input labels
+$text-03: hsl(0,0,40); //placeholder text
+$text-04: hsl(0,0,100); //text on $interactive-01 and its states | text on $interactive-02 | text on $interactive-danger
+$text-05: hsl(0,0,50); //tertiary text | help text
+
+$disabled-text: hsl(0,0,70); //disabled text on disabled interactive elements
+$text-error: hsl(357,76,50); //error message text
+
+//SEMATIC 
+$error-01: hsl(357,76,70); //indicates error
+$error-02: hsl(357,76,50); //indicates error
+$error-03: hsl(357,76,30); //indicates error
+
+$warning-01: hsl(47,98,80); //indicate warning
+$warning-02: hsl(47,98,60); //indicate warning
+$warning-03: hsl(47,98,40); //indicate warning
+
+$success-01: hsl(138,64,60); //indicate success
+$success-02: hsl(138,64,40); //indicate success
+$success-03: hsl(138,64,20); //indicate success
+
+//INTERACTIVE 
+$interactive-01: hsl(220,70,50); //primary interactive color (Active)
+$hover-interactive-01: hsl(220,70,60); //hover state for $interactive-01
+$clicked-interactive-01: hsl(220,70,40); //clicked state for $interactive-01
+$disabled-interactive-01: hsl(0,0,70); //disabled state $interactive-01
+
+$interactive-02: hsl(0,0,20); //secondary interactive color (Active)
+$hover-interactive-02: hsl(0,0,30); //hover state for $interactive-02
+$clicked-interactive-02: hsl(0,0,10); //clicked state for $interactive-02
+$disabled-interactive-02: hsl(0,0,70); //disabled state for $interactive-02
+
+$interactive-03: hsl(220,70,50); //tertiary button:Text + icons(Active)
+$hover-interactive-03: hsl(0,0,80); //background on hover state for $interactive-03
+$clicked-interactive-03: hsl(220,70,50); //Clicked state for $interactive-03
+$disabled-interactive-03: hsl(0,0,70); //Disabled state $interactive-03
+
+$interactive-danger: hsl(357,76,50); //Danger interactive color (Active)
+$hover-interactive-danger: hsl(357,76,80); //Hover state for $interactive-danger
+$clicked-interactive-danger: hsl(357,76,30); //clicked state for $interactive-danger
+$disabled-interactive-danger: hsl(0,0,70); //Disabled state for $interactive-danger
+
+$interactive-focus: hsl(220,70,50); //Focus border | Focus underline
+
+//ICONS
+$icon-01: hsl(0,0,10);
+$icon-02: hsl(0,0,40);
+$icon-03: hsl(0,0,70); //disabled icons
+
+//FIELDS
+$field-01: hsl(0,0,90); //input field for $ui-background
+$field-02: hsl(0,0,100); //input field for $ui_01
+$disabled-fields: hsl(0,0,70); //disabled fields
+
+//LINKS
+$link-01: hsl(220,70,50); //primary links
+$visited-link: hsl(220,70,40); //visited link
+
+//SKELETONS
+$skeleton-01: hsl(0,0,90); //skeleton text for $ui-background | skeleton elements for $ui-background
+$skeleton-02: hsl(0,0,10); //skeleton text for $ui-01 | skeleton elements for $ui-01
+
+
+//OVERLAY
+$overlay-01: hsla(0,0,10%,0.5); //background overlay
+
+//HIGHLIGHTS
+$highlight-01: hsl(220,70,50); //selected elements | active elements
+
