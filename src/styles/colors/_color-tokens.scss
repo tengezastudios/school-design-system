@@ -17,6 +17,11 @@ $text-05: hsl(0,0,50); //Gray 50: Tertiary text | Help text
 $disabled-text: hsl(0,0,70); //Gray 70: Disabled text on disabled interactive elements
 $text-error: hsl(357,76,50); //Red 50: Error message text
 
+//ICONS
+$icon-01: hsl(0,0,10); //Gray 10: Primary icons
+$icon-02: hsl(0,0,40); //Gray 40: Secondary icons
+$icon-03: hsl(0,0,70); //Gray 70: Disabled icons
+
 //SEMATIC 
 $error-01: hsl(357,76,70); //Red 70: Indicates error
 $error-02: hsl(357,76,50); //Red 50: Indicates error
@@ -53,11 +58,6 @@ $disabled-interactive-danger: hsl(0,0,70); //Gray 70: Disabled state for $intera
 
 $interactive-focus: hsl(220,70,50); //Blue 50: Focus border | Focus underline
 
-//ICONS
-$icon-01: hsl(0,0,10); //Gray 10: Primary icons
-$icon-02: hsl(0,0,40); //Gray 40: Secondary icons
-$icon-03: hsl(0,0,70); //Gray 70: Disabled icons
-
 //FIELDS
 $field-01: hsl(0,0,90); //Gray 90: Input field for $ui-background
 $field-02: hsl(0,0,100); //White: Input field for $ui_01
@@ -71,8 +71,8 @@ $visited-link: hsl(220,70,40); //Blue 70: Visited link
 $skeleton-01: hsl(0,0,90); //Gray 90: Skeleton text for $ui-background | Skeleton elements for $ui-background
 $skeleton-02: hsl(0,0,100); //Gray 10: Skeleton text for $ui-01 | Skeleton elements for $ui-01
 
-//OVERLAY
-$overlay-01: hsla(0,0,10%,0.5); //Gray 10 with 50% opacity: Background overlay
-
 //HIGHLIGHTS
 $highlight-01: hsl(220,70,50); //Blue 50: Selected elements | Active elements
+
+//OVERLAY
+$overlay-01: hsla(0,0,10%,0.5); //Gray 10 with 50% opacity: Background overlay
