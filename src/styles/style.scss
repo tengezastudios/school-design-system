@@ -1,0 +1,59 @@
+@import 'typography/typography';
+@import 'colors/color-tokens';
+
+body {
+    background-color: $ui-background;
+}
+//Headings
+#heading-01{
+    @include heading-01($font-name);
+}
+
+#heading-02{
+    @include heading-02($font-name);
+    
+}
+
+#heading-03{
+    @include heading-03($font-name);
+}
+
+#heading-04{
+    @include heading-04($font-name);
+}
+ 
+#heading-05{ 
+    @include heading-05($font-name);
+}
+
+#heading-06{
+    @include heading-06($font-name);
+}
+//Subtitles
+#subtitle-01 {
+    @include subtitle-01($font-name);
+}
+#subtitle-02 {
+    @include subtitle-02($font-name);
+}
+//Body
+#body-01 {
+    @include body-01($font-name);
+}
+
+#body-02 {
+    @include body-02($font-name);
+}
+
+//Supportive
+#button {
+    @include button($font-name);
+}
+
+#caption {
+    @include caption($font-name);
+}
+
+#overline {
+    @include overline($font-name);
+}
