@@ -1,5 +1,7 @@
-//contains all box-shadow tokens
+//All shadow tokens used accross the Design System.
 
-$shadow-01: 0px 10px 10px hsla(0,0,40, 0.07);
-$shadow-02: 0px 10px 30px hsla(0,0,40,0.21);
-$shadow-03: 0px 10px 50px hsla(0,0,40,0.35);
+@import '../colors/color-tokens';
+
+$shadow-01: 0px 10px 10px $shadow-01;
+$shadow-02: 0px 10px 30px $shadow-02;
+$shadow-03: 0px 10px 50px $shadow-03;
