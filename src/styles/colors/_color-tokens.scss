@@ -18,9 +18,8 @@ $disabled-text: hsl(0,0,70); //Gray 70: Disabled text on disabled interactive el
 $text-error: hsl(357,76,50); //Red 50: Error message text
 
 //ICONS
-$icon-01: hsl(0,0,10); //Gray 10: Primary icons
-$icon-02: hsl(0,0,100); //White: Icon color on all $interactive-01, $interactive-02, $interactive-danger states 
-
+$icon-01: hsl(0,0,10); //Gray 10: Default icon color
+$icon-02: hsl(0,0,100); //White: Icon color on all $interactive-01, $interactive-02, $interactive-danger states
 
 //SEMATIC 
 $error-01: hsl(357,76,70); //Red 70: Indicates error
@@ -46,10 +45,10 @@ $hover-interactive-02: hsl(0,0,30); //Gray 30: Hover state for $interactive-02
 $clicked-interactive-02: hsl(0,0,10); //Gray 10: Clicked state for $interactive-02
 $disabled-interactive-02: hsl(0,0,70); //Gray 70: Disabled state for $interactive-02
 
-$interactive-03: hsl(220,70,50); //Blue 50: Tertiary button: Text + Icons(Active)
-$hover-interactive-03: hsl(0,0,80); //Gray 80: Background on hover state for $interactive-03
-$clicked-interactive-03: hsl(220,70,50); //Blue 50: Clicked state for $interactive-03
-$disabled-interactive-03: hsl(0,0,70); //Gray 70: Disabled state $interactive-03
+$interactive-03: hsl(220,70,50); //Blue 50: Tertiary Interactive color when active and hovered (text and icons)
+$hover-interactive-03: hsl(0,0,80); //Gray 80: Hover background for $interactive-03
+$clicked-interactive-03: hsl(220,70,50); //Blue 50: Clicked state for $interactive-03 (text and icons)
+$disabled-interactive-03: hsl(0,0,70); //Gray 70: Disabled state $interactive-03 (text and icons)
 
 $interactive-danger: hsl(357,76,50); //Red 50: Danger interactive color (Active)
 $hover-interactive-danger: hsl(357,76,70); //Red 70: Hover state for $interactive-danger
