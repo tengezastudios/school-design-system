@@ -97,6 +97,7 @@ $font-name: 'Rubik';
     text-transform: uppercase;
 }
 
+//caption
 @mixin caption($font-family) {
     font-family: $font-family;
     font-weight: 400;
@@ -104,6 +105,7 @@ $font-name: 'Rubik';
     letter-spacing: 0;
 }
 
+//overline
 @mixin overline($font-family) {
     font-family: $font-family;
     font-weight: 400;
