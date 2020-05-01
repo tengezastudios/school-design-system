@@ -1,78 +1,45 @@
-// All color variables used across the design system
+//All colors used in the design system.
 
-//UI
-$ui-background: hsl(0,0,100); //White: Primary page background
-$ui-01: hsl(0,0,90); //Gray 90: Container background for $ui-background | Secondary page background
-$ui-02: hsl(0,0,100); //White: Container background for $ui-01
-$ui-03: hsl(0,0,80); //Gray 80: Subtle borders | Tertiary background
-$ui-04: hsl(0,0,50); //Gray 50: Medium contrast border
-$ui-05: hsl(0,0,10); //Gray 10: High contrast border | Emphasis elements
+//NEUTRAL COLORS
+$gray-10-50: hsla(0,0,10, 0.5); //Gray 10 @ 50%
 
-//TEXT 
-$text-01: hsl(0,0,10); //Gray 10: Primary text | Header text | Body text | Hover text for $text-02
-$text-02: hsl(0,0,30); //Gray 30: Secondary text | Input labels
-$text-03: hsl(0,0,40); //Gray 40: Placeholder text
-$text-04: hsl(0,0,100); //White: Text on $interactive-01 and its states | Text on $interactive-02 | Text on $interactive-danger
-$text-05: hsl(0,0,50); //Gray 50: Tertiary text | Help text
-$disabled-text: hsl(0,0,70); //Gray 70: Disabled text on disabled interactive elements
-$text-error: hsl(357,76,50); //Red 50: Error message text
+$gray-10: hsl(0,0,10); //Gray 10
+$gray-20: hsl(0,0,20); //Gray 20
+$gray-30: hsl(0,0,30); //Gray 30
 
-//ICONS
-$icon-01: hsl(0,0,10); //Gray 10: Primary icons
-$icon-02: hsl(0,0,40); //Gray 40: Secondary icons
-$icon-03: hsl(0,0,70); //Gray 70: Disabled icons
+$gray-40-07: hsla(0,0,40,0.07); //Gray 40 @ 7%
+$gray-40-21: hsla(0,0,40, 0.21); //Gray 40 @ 21%
+$gray-40-35: hsla(0,0,40, 0.35); //Gray 40 @ 35%
 
-//SEMATIC 
-$error-01: hsl(357,76,70); //Red 70: Indicates error
-$error-02: hsl(357,76,50); //Red 50: Indicates error
-$error-03: hsl(357,76,30); //Red 30: Indicates error
+$gray-40: hsl(0,0,40); //Gray 40 
+$gray-50: hsl(0,0,50); //Gray 50
+$gray-60: hsl(0,0,60); //Gray 60
+$gray-70: hsl(0,0,70); //Gray 70
+$gray-80: hsl(0,0,80); //Gray 80
+$gray-90: hsl(0,0,90); //Gray 90
 
-$warning-01: hsl(47,98,80); //Yellow 80: Indicate warning
-$warning-02: hsl(47,98,60); //Yellow 60: Indicate warning
-$warning-03: hsl(47,98,40); //Yellow 40: Indicate warning
+$white: hsl(0,0,100); //White
 
-$success-01: hsl(138,64,60); //Green 60: Indicate success
-$success-02: hsl(138,64,40); //Green 40: Indicate success
-$success-03: hsl(138,64,20); //Green 20: Indicate success
+//PRIMARY COLORS
+$blue-10: hsl(220,70,10); //Blue 10
+$blue-20: hsl(220,70,20); //Blue 20
+$blue-30: hsl(220,70,30); //Blue 30
+$blue-40: hsl(220,70,40); //Blue 40
+$blue-50: hsl(220,70,50); //Blue 50
+$blue-60: hsl(220,70,60); //Blue 60
+$blue-70: hsl(220,70,70); //Blue 70
+$blue-80: hsl(220,70,80); //Blue 80
+$blue-90: hsl(220,70,90); //Blue 90
 
-//INTERACTIVE 
-$interactive-01: hsl(220,70,50); //Blue 50: Primary interactive color (Active)
-$hover-interactive-01: hsl(220,70,60); //Blue 60: Hover state for $interactive-01
-$clicked-interactive-01: hsl(220,70,40); //Blue 40: clicked state for $interactive-01
-$disabled-interactive-01: hsl(0,0,70); //gray 70: Disabled state $interactive-01
+//SEMANTIC
+$red-30: hsl(357,76,30);  //Red 30
+$red-50: hsl(357,76,50); //Red 50
+$red-70: hsl(357,76,70); //Red 70
 
-$interactive-02: hsl(0,0,20); //Gray 20: Secondary interactive color (Active)
-$hover-interactive-02: hsl(0,0,30); //Gray 30: Hover state for $interactive-02
-$clicked-interactive-02: hsl(0,0,10); //Gray 10: Clicked state for $interactive-02
-$disabled-interactive-02: hsl(0,0,70); //Gray 70: Disabled state for $interactive-02
+$yellow-40: hsl(47,98,40); //Yellow 40
+$yellow-60: hsl(47,98,60); //Yellow 60
+$yellow-80: hsl(47,98,80); //Yellow 80
 
-$interactive-03: hsl(220,70,50); //Blue 50: Tertiary button: Text + Icons(Active)
-$hover-interactive-03: hsl(0,0,80); //Gray 80: Background on hover state for $interactive-03
-$clicked-interactive-03: hsl(220,70,50); //Blue 50: Clicked state for $interactive-03
-$disabled-interactive-03: hsl(0,0,70); //Gray 70: Disabled state $interactive-03
-
-$interactive-danger: hsl(357,76,50); //Red 50: Danger interactive color (Active)
-$hover-interactive-danger: hsl(357,76,70); //Red 70: Hover state for $interactive-danger
-$clicked-interactive-danger: hsl(357,76,30); //Red 30: Clicked state for $interactive-danger
-$disabled-interactive-danger: hsl(0,0,70); //Gray 70: Disabled state for $interactive-danger
-
-$interactive-focus: hsl(220,70,50); //Blue 50: Focus border | Focus underline
-
-//FIELDS
-$field-01: hsl(0,0,90); //Gray 90: Input field for $ui-background
-$field-02: hsl(0,0,100); //White: Input field for $ui_01
-$disabled-fields: hsl(0,0,70); //Gray 70: Disabled fields
-
-//LINKS
-$link-01: hsl(220,70,50); //Blue 50: Primary links
-$visited-link: hsl(220,70,40); //Blue 70: Visited link
-
-//SKELETONS
-$skeleton-01: hsl(0,0,90); //Gray 90: Skeleton text for $ui-background | Skeleton elements for $ui-background
-$skeleton-02: hsl(0,0,100); //Gray 10: Skeleton text for $ui-01 | Skeleton elements for $ui-01
-
-//HIGHLIGHTS
-$highlight-01: hsl(220,70,50); //Blue 50: Selected elements | Active elements
-
-//OVERLAY
-$overlay-01: hsla(0,0,10%,0.5); //Gray 10 @ 50%: Background overlay
+$green-20: hsl(138,64,20); //Green 20
+$green-40: hsl(138,64,40); //Green 40
+$green-60: hsl(138,64,60); //Green 60
