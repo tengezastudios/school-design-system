@@ -5,6 +5,7 @@ body {
     background-color: $ui-background;
 }
 
+// Typography styling
 //HEADINGS
 #heading-01{
     @include heading-01($font-name);
@@ -60,3 +61,7 @@ body {
 #overline {
     @include overline($font-name);
 }
+//typography styling end
+
+//button styling
+
