@@ -1,5 +1,6 @@
 @import 'typography/typography-tokens';
 @import 'colors/color-use-tokens';
+@import 'spacing/spacing-tokens';
 
 body {
     background-color: $ui-background;
@@ -23,7 +24,7 @@ body {
     @include heading-04($font-name);
 }
  
-#heading-05{ 
+#heading-05{  
     @include heading-05($font-name);
 }
 
@@ -65,3 +66,23 @@ body {
 
 //button styling
 
+.button {
+    width: 6.5rem;
+    height: 2.5rem;
+    display: flex;
+}
+
+.button_base_theme {
+    background-color: $gray-90;
+    color: $white;
+}
+
+.button_text{
+    margin: auto;
+}
+
+.interactive_focus{
+    width: fit-content;
+    padding: $spacing-01;
+    border: solid 2px $blue-50;
+}
