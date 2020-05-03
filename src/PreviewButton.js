@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './Atoms/Buttons/Button';
+import {Button} from './Atoms/Buttons/Button';
 
 export default class PreviewButton extends React.Component {
     render() {

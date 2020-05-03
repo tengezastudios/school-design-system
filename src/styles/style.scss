@@ -70,15 +70,67 @@ body {
     width: 6.5rem;
     height: 2.5rem;
     display: flex;
+    color: $white;
+    cursor: pointer;
 }
 
-.button_base_theme {
+.button_icon {
+    width: 8.25rem;
+    height: 2.563rem;
+    display: flex;
+    color: $white;
+    cursor: pointer;
+}
+
+.left_icon {
+    position: absolute;
+    top: 1.281rem;
+    left: $spacing-05;
+}
+
+.right_icon {
+    position: absolute;
+    left: 6.375rem;
+    top: 1.281rem;
+    padding-left: 1.125rem;
+    padding-right: 2.125rem;
+}
+
+.button_base_state {
     background-color: $gray-90;
     color: $white;
 }
 
+
+.button_hide_focus{
+    border:none;
+}
+
 .button_text{
     margin: auto;
+    @include button('Rubik');
+    font-family: 'Rubik';
+}
+
+.button_icon_text{
+    position: absolute;
+    @include button('Rubik');
+    left: 3.5rem;
+}
+
+
+.button_tertiary_text{
+    position: absolute;
+    @include button('Rubik');
+    left: 3.5rem;
+    color: $blue-50;
+}
+
+.button_tertiary_text_right{
+    position: relative;
+    @include button('Rubik');
+    left: 1.75rem;
+    color: $blue-50;
 }
 
 .interactive_focus{
@@ -86,3 +138,76 @@ body {
     padding: $spacing-01;
     border: solid 2px $blue-50;
 }
+
+//PRIMARY BUTTON STYLES
+
+.primary_button_active_state {
+    background-color: $blue-50;
+}
+
+.primary_button_hover_state {
+    background-color: $blue-60;
+}
+
+.primary_button_clicked_state{
+    background-color: $blue-40;
+}
+
+.primary_button_disabled_state{
+    background-color: $gray-70;
+}
+
+//TERTIARY BUTTON STYLES
+.tertiary_button_active_state {
+    background-color: none;
+}
+
+.tertiary_button_hover_state {
+    background-color: $gray-80;
+}
+
+.tertiary_button_clicked_state{
+    background-color: none;
+}
+
+.tertiary_button_disabled_state{
+    background-color: none;
+}
+
+//SECONDARY BUTTON STYLES
+.secondary_button_active_state {
+    background-color: $gray-20;
+}
+
+.secondary_button_hover_state {
+    background-color: $gray-30;
+}
+
+.secondary_button_clicked_state{
+    background-color: $gray-10;
+}
+
+.secondary_button_disabled_state{
+    background-color: $gray-70;
+}
+
+
+//DANGER BUTTON STYLES
+.danger_button_active_state {
+    background-color: $red-50;
+}
+
+.danger_button_hover_state {
+    background-color: $red-70;
+}
+
+.danger_button_clicked_state{
+    background-color: $red-30;
+}
+
+.danger_button_disabled_state{
+    background-color: $gray-70;
+}
+
+
+
