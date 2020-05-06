@@ -64,7 +64,7 @@ body {
 }
 //typography styling end
 
-//button styling
+//BUTTON STYLING
 
 .button {
     width: 6.5rem;
@@ -80,22 +80,23 @@ body {
     display: flex;
     color: $white;
     cursor: pointer;
+    position: relative;
 }
 
 .left_icon {
     position: absolute;
-    top: 1.281rem;
+    top: 12.5px;
     left: $spacing-05;
     margin: 0;
     padding: 0;
 }
 
 .right_icon {
+    margin: 0;
+    padding: 0;
     position: absolute;
-    left: 6.375rem;
-    top: 1.281rem;
-    padding-left: 1.125rem;
-    padding-right: 2.125rem;
+    left: 92px;
+    top: 12.5px;
 }
 
 .button_base_state {
