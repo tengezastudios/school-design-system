@@ -75,9 +75,11 @@ body {
 }
 
 .button_icon {
+    justify-content: center;
     width: 8.25rem;
     height: 2.563rem;
     display: flex;
+    align-items: center;
     color: $white;
     cursor: pointer;
     position: relative;
@@ -85,18 +87,16 @@ body {
 
 .left_icon {
     position: absolute;
-    top: 12.5px;
     left: $spacing-05;
-    margin: 0;
+    margin: auto;
     padding: 0;
 }
 
 .right_icon {
-    margin: 0;
+    margin: auto;
     padding: 0;
     position: absolute;
     left: 92px;
-    top: 12.5px;
 }
 
 .button_base_state {
@@ -124,7 +124,6 @@ body {
 
 
 .button_tertiary_text{
-    position: absolute;
     @include button('Rubik');
     left: 3.5rem;
     color: $blue-50;
