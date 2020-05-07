@@ -124,6 +124,7 @@ body {
 
 
 .button_tertiary_text{
+    position: absolute;
     @include button('Rubik');
     left: 3.5rem;
     color: $blue-50;
@@ -131,7 +132,7 @@ body {
 }
 
 .button_tertiary_text_right{
-    position: relative;
+    position: absolute;
     @include button('Rubik');
     left: 1.75rem;
     color: $blue-50;
