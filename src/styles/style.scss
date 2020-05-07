@@ -119,6 +119,7 @@ body {
     position: absolute;
     @include button('Rubik');
     left: 3.5rem;
+    margin: auto;
     font-family: 'Rubik', sans-serif;
 }
 
