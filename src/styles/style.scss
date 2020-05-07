@@ -127,6 +127,7 @@ body {
     position: absolute;
     @include button('Rubik');
     left: 3.5rem;
+    margin: auto;
     color: $blue-50;
     font-family: 'Rubik', sans-serif;
 }
@@ -135,6 +136,7 @@ body {
     position: absolute;
     @include button('Rubik');
     left: 1.75rem;
+    margin: auto;
     color: $blue-50;
     font-family: 'Rubik', sans-serif;
 }
@@ -146,7 +148,6 @@ body {
 }
 
 //PRIMARY BUTTON STYLES
-
 .primary_button_active_state {
     background-color: $blue-50;
 }
