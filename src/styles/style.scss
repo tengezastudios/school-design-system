@@ -254,3 +254,42 @@ body {
 .link-disabled{
     color: $gray-70;
 }
+
+//TAG STYLES
+.tag-container{
+    margin: $spacing-02;
+   display: flex;
+   align-items: center; 
+   justify-content: center;
+   border-radius: 1rem;
+   width: 4.56rem;
+   height: 1.875rem;
+   background-color: $blue-50; 
+}
+
+.tag-text{
+    @include caption('Rubik');
+    font-family: 'Rubik', sans-serif;
+    color: $white;
+}
+
+.tag-container-interactive{
+    margin: $spacing-02;
+    padding: 0 12px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    border-radius: 1rem;
+    width: 93px;
+    height: 32px;
+    background-color: $blue-50; 
+}
+
+.interactive-icon{
+    margin-left: $spacing-02;
+    cursor: pointer;
+}
+
+.base-group{
+    display: flex;
+}
