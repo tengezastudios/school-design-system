@@ -1,6 +1,7 @@
 @import 'typography/typography-tokens';
 @import 'colors/color-use-tokens';
 @import 'spacing/spacing-tokens';
+@import 'spacing/radius-tokens';
 
 body {
     background-color: $ui-background;
@@ -292,4 +293,68 @@ body {
 
 .base-group{
     display: flex;
+}
+
+//CHECKBOX STYLES
+.unselected-checkbox{
+    width: $spacing-03;
+    height: $spacing-03;
+    border: solid 1px $gray-10;
+    border-radius: 2px;
+    display: grid;
+}
+
+.unselected-checkbox::after{
+    content: 'Option';
+    display: inline;
+    color: $gray-10;
+    position: relative;
+    left: 20px;
+    bottom: 2px;
+    @include body-02('Rubik');
+    font-family: 'Rubik', sans-serif;
+}
+
+.unselected-checkbox-disabled{
+    border: solid 1px $gray-70;
+    display: grid;
+}
+
+.unselected-checkbox-disabled::after{
+   
+    content: 'Option';
+    display: inline;
+    color: $gray-70;
+    position: relative;
+    left: 20px;
+    bottom: 2px;
+    @include body-02('Rubik');
+    font-family: 'Rubik', sans-serif;  
+}
+
+.unselected-checkbox-focus{
+    border: solid 1px $blue-50;
+    padding: $spacing-01;
+    width: 72px;
+    height: fit-content;
+}
+
+.selected-container{
+    position: relative;
+}
+
+.select-block{
+    border-radius: 1px;
+    background-color: $gray-10;
+    position: absolute;
+    right: 27%;
+    top: 27%;
+}
+
+.select-block-disabled{
+    border-radius: 1px;
+    background-color: $gray-70;
+    position: absolute;
+    right: 27%;
+    top: 27%;
 }
