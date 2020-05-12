@@ -218,4 +218,39 @@ body {
 }
 
 
+//LINK STYLES
+.link-container{
+    width: fit-content;
+    height: fit-content;
+}
 
+.link-container-focus{
+    border: solid 1px $blue-50;
+    padding: 2px $spacing-01;
+}
+
+.link-body-01{
+    @include body-01('Rubik');
+    font-family: 'Rubik', sans-serif;
+}
+
+.link-body-02{
+    @include body-02('Rubik');
+    font-family: 'Rubik', sans-serif;
+}
+
+.link-active{
+    color: $blue-50;
+}
+
+.link-hover{
+    color: $blue-60;
+}
+
+.link-clicked{
+    color: $blue-40;
+}
+
+.link-disabled{
+    color: $gray-70;
+}
