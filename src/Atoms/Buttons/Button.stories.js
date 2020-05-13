@@ -14,12 +14,15 @@ const $gray70 = "#b2b2b2";
 const $white = "#fff";
 
 
-//The base button 
-export const Base = () => (<Button cls="button button_base_state " fn={action('base button')} icon="none">
+//Base button
+export const Base = () => (<Button cls="button button_base_state" fn={action('base button')} icon="none">
     <p className="button_text">BUTTON</p>
 </Button>);
 
-//Primary active btn
+
+//PRIMARY BUTTON STORIES
+
+//Primary active button
 export const PrimaryActive = () => (
   <Button cls="button primary_button_active_state" onClick={action('active')} border="none"  icon="none" fn={action('primary active button')}>
     <p className="button_text">BUTTON</p>
@@ -33,56 +36,56 @@ export const PrimaryHover = () => (
   </Button>
 );
 
-//Primary focus 
+//Primary focus button
 export const PrimaryFocus = () => (
   <Button cls="button primary_button_hover_state" onClick={action('hover')} icon="none" fn={action('primary focus button')}>
     <p className="button_text">BUTTON</p>
   </Button>
 );
 
-//Primary clicked
+//Primary clicked button
 export const PrimaryClicked = () => (
   <Button cls="button primary_button_clicked_state" onClick={action('hover')} icon="none" border="none" fn={action('primary focus button')}>
     <p className="button_text">BUTTON</p>
   </Button>
 );
 
-//Primary disabled
+//Primary disabled button
 export const PrimaryDisabled = () => (
   <Button cls="button primary_button_disabled_state" onClick={action('hover')} icon="none" border="none" fn={action('primary focus button')}>
     <p className="button_text">BUTTON</p>
   </Button>
 );
 
-//Primary with icon active
+//Primary active button with icon 
 export const PrimaryActiveIconLeft = () => (
   <Button cls="button_icon primary_button_active_state" clsIcon="left_icon" border="none" iconStroke={$white} fn={action('primary focus button')}>
     <p className="button_icon_text">BUTTON</p>
   </Button>
 );
 
-//Primary with icon hover
+//Primary hover button with icon
 export const PrimaryHoverIconLeft = () => (
   <Button cls="button_icon primary_button_hover_state" clsIcon="left_icon" border="none" iconStroke={$white} fn={action('primary focus button')}>
     <p className="button_icon_text">BUTTON</p>
   </Button>
 );
 
-//Primary with icon clicked
+//Primary clicked button with icon
 export const PrimaryClickedIconLeft = () => (
   <Button cls="button_icon primary_button_clicked_state" clsIcon="left_icon" border="none" iconStroke={$white} fn={action('primary focus button')}>
     <p className="button_icon_text">BUTTON</p>
   </Button>
 );
 
-//Primary with icon focused
+//Primary focused button with icon
 export const PrimaryFocusIconLeft = () => (
   <Button cls="button_icon primary_button_active_state" clsIcon="left_icon" iconStroke={$white} fn={action('primary focus button')}>
     <p className="button_icon_text">BUTTON</p>
   </Button>
 );
 
-//Primary with icon disabled
+//Primary disabled button with icon
 export const PrimaryDisableIconLeft = () => (
   <Button cls="button_icon primary_button_disabled_state" clsIcon="left_icon" border="none" iconStroke={$white} fn={action('primary focus button')}>
     <p className="button_icon_text">BUTTON</p>
@@ -90,99 +93,103 @@ export const PrimaryDisableIconLeft = () => (
 );
 
 
-//Secondary active
+//SECONDARY BUTTON STORIES
+
+//Secondary active button
 export const SecondaryActive = () => (
   <Button cls="button secondary_button_active_state" onClick={action('hover')} icon="none" border="none" fn={action('primary focus button')}>
     <p className="button_text">BUTTON</p>
   </Button>
 );
 
-//Secondary hover
+//Secondary hover button
 export const SecondaryHover = () => (
   <Button cls="button secondary_button_disabled_state" onClick={action('hover')} icon="none" border="none" fn={action('primary focus button')}>
     <p className="button_text">BUTTON</p>
   </Button>
 );
 
-//Secondary clicked
+//Secondary clicked button
 export const SecondaryClicked = () => (
   <Button cls="button secondary_button_hover_state" icon="none" border="none" fn={action('primary focus button')}>
     <p className="button_text">BUTTON</p>
   </Button>
 );
 
-//Secondary focused
+//Secondary focused button
 export const SecondaryFocused = () => (
   <Button cls="button secondary_button_active_state" icon="none" fn={action('primary focus button')}>
     <p className="button_text">BUTTON</p>
   </Button>
 );
 
-//Secondary disabled
+//Secondary disabled button
 export const SecondaryDisabled = () => (
   <Button cls="button secondary_button_disabled_state" icon="none" border="none" fn={action('primary focus button')}>
     <p className="button_text">BUTTON</p>
   </Button>
 );
 
-//Secondary with icon active
+//Secondary active button with icon
 export const SecondaryActiveIconLeft = () => (
   <Button cls="button_icon secondary_button_active_state" clsIcon="left_icon" border="none" iconStroke={$white} fn={action('primary focus button')}>
     <p className="button_icon_text">BUTTON</p>
   </Button>
 );
 
-//Secondary with icon hover
+//Secondary hover button with icon
 export const SecondaryHoverIconLeft = () => (
   <Button cls="button_icon secondary_button_hover_state" clsIcon="left_icon" border="none" iconStroke={$white} fn={action('primary focus button')}>
     <p className="button_icon_text">BUTTON</p>
   </Button>
 );
 
-//Secondary with icon clicked
+//Secondary clicked button with icon
 export const SecondaryClickedIconLeft = () => (
   <Button cls="button_icon secondary_button_clicked_state" clsIcon="left_icon" border="none" iconStroke={$white} fn={action('primary focus button')}>
     <p className="button_icon_text">BUTTON</p>
   </Button>
 );
 
-//Secondary with icon focused
+//Secondary focused button with icon
 export const SecondaryFocusIconLeft = () => (
   <Button cls="button_icon secondary_button_active_state" clsIcon="left_icon" iconStroke={$white} fn={action('primary focus button')}>
     <p className="button_icon_text">BUTTON</p>
   </Button>
 );
 
-//Secondary with icon disabled
+//Secondary disabled button with icon
 export const SecondaryDisabledIconLeft = () => (
   <Button cls="button_icon secondary_button_disabled_state" clsIcon="left_icon" border="none" iconStroke={$white} fn={action('primary focus button')}>
     <p className="button_icon_text">BUTTON</p>
   </Button>
 );
 
+
 //TERTIARY BUTTONS
-//Tertiary left active
+
+//Left tertiary active button
 export const TertiaryLeftActive = () => (
   <Button cls="button_icon tertiary_button_active_state" clsIcon="left_icon" iconStroke={$blue50} border="none" fn={action('primary focus button')}>
     <p className="button_tertiary_text">BUTTON</p>
   </Button>
 );
 
-//Tertiary left hover
+//Left tertiary hover button
 export const TertiaryLeftHover = () => (
   <Button cls="button_icon tertiary_button_hover_state" clsIcon="left_icon" iconStroke={$blue50} border="none" fn={action('primary focus button')}>
     <p className="button_tertiary_text">BUTTON</p>
   </Button>
 );
 
-//Tertiary left clicked
+//Left tertiary clicked button
 export const TertiaryLeftClicked = () => (
   <Button cls="button_icon tertiary_button_clicked_state" clsIcon="left_icon" iconStroke={$blue40} border="none" fn={action('primary focus button')}>
     <p className="button_tertiary_text">BUTTON</p>
   </Button>
 );
 
-//Tertiary left disabled
+//Left tertiary disabled button
 export const TertiaryLeftDisabled = () => (
   <Button cls="button_icon tertiary_button_disabled_state" clsIcon="left_icon" iconStroke={$gray70} border="none" fn={action('primary focus button')}>
     <p style={{color: $gray70}} className="button_tertiary_text">BUTTON</p>
@@ -190,42 +197,42 @@ export const TertiaryLeftDisabled = () => (
 );
 
 
-//Tertiary left focus
+//Left tertiary focused button
 export const TertiaryLeftFocus = () => (
   <Button cls="button_icon tertiary_button_focus_state" clsIcon="left_icon" iconStroke={$blue50}  fn={action('primary focus button')}>
     <p className="button_tertiary_text">BUTTON</p>
   </Button>
 );
 
-//Tertiary right active
+//Right tertiary active button
 export const TertiaryRightActive = () => (
   <Button cls="button_icon tertiary_button_active_state" clsIcon="right_icon" iconStroke={$blue50} border="none" fn={action('primary focus button')}>
     <p className="button_tertiary_text_right">BUTTON</p>
   </Button>
 );
 
-//Tertiary right hover
+//Right tertiary hover button
 export const TertiaryRightHover = () => (
   <Button cls="button_icon tertiary_button_hover_state" clsIcon="right_icon" iconStroke={$blue50} border="none" fn={action('primary focus button')}>
     <p className="button_tertiary_text_right">BUTTON</p>
   </Button>
 );
 
-//Tertiary right clicked
+//Right tertiary clicked button
 export const TertiaryRightClicked = () => (
   <Button cls="button_icon tertiary_button_clicked_state" clsIcon="right_icon" iconStroke={$blue40} border="none" fn={action('primary focus button')}>
     <p className="button_tertiary_text_right">BUTTON</p>
   </Button>
 );
 
-//Tertiary right focused
+//Right tertiary focused button
 export const TertiaryRightFocused = () => (
   <Button cls="button_icon tertiary_button_active_state" clsIcon="right_icon" iconStroke={$blue50}  fn={action('primary focus button')}>
     <p className="button_tertiary_text_right">BUTTON</p>
   </Button>
 );
 
-//Tertiary right disabled
+//Right tertiary disabled button
 export const TertiaryDisabledRight = () => (
   <Button cls="button_icon tertiary_button_disabled_state" clsIcon="right_icon" iconStroke={$gray70} border="none" fn={action('primary focus button')}>
     <p style={{color: $gray70}} className="button_tertiary_text_right">BUTTON</p>
@@ -233,64 +240,65 @@ export const TertiaryDisabledRight = () => (
 );
 
 
+//DANGER BUTTON STORIES
 
-//Danger active
+//Danger active button
 export const DangerActive = () => (
   <Button cls="button danger_button_active_state" onClick={action('hover')} border="none" icon="none" fn={action('primary focus button')}>
     <p className="button_text">BUTTON</p>
   </Button>
 );
 
-//Danger hover
+//Danger hover button
 export const DangerHover = () => (
   <Button cls="button danger_button_hover_state" onClick={action('hover')} icon="none" border="none" fn={action('primary focus button')}>
     <p className="button_text">BUTTON</p>
   </Button>
 );
 
-//Danger clicked
+//Danger clicked button
 export const DangerClicked = () => (
   <Button cls="button danger_button_clicked_state" onClick={action('hover')} icon="none" border="none" fn={action('primary focus button')}>
     <p className="button_text">BUTTON</p>
   </Button>
 );
 
-//Danger focused
+//Danger focused button
 export const DangerFocused = () => (
   <Button cls="button danger_button_active_state" onClick={action('hover')} icon="none" fn={action('primary focus button')}>
     <p className="button_text">BUTTON</p>
   </Button>
 );
 
-//Danger with icon active
+//Active danger button with icon
 export const DangerActiveIconLeft = () => (
   <Button cls="button_icon danger_button_active_state" clsIcon="left_icon" border="none" iconStroke={$white} fn={action('primary focus button')}>
     <p className="button_icon_text">BUTTON</p>
   </Button>
 );
 
-//Danger with icon hover
+//Hover danger button with icon
 export const DangerHoverIconLeft = () => (
   <Button cls="button_icon danger_button_hover_state" clsIcon="left_icon" border="none" iconStroke={$white} fn={action('primary focus button')}>
     <p className="button_icon_text">BUTTON</p>
   </Button>
 );
 
-//Danger with icon clicked
+//Clicked danger button with icon
 export const DangerClickedIconLeft = () => (
   <Button cls="button_icon danger_button_clicked_state" clsIcon="left_icon" border="none" iconStroke={$white} fn={action('primary focus button')}>
     <p className="button_icon_text">BUTTON</p>
   </Button>
 );
 
-//Danger with icon focused
+//Focused danger button with icon
 export const DangerFocusIconLeft = () => (
   <Button cls="button_icon danger_button_active_state" clsIcon="left_icon" iconStroke={$white} fn={action('primary focus button')}>
     <p className="button_icon_text">BUTTON</p>
   </Button>
 );
 
-//Danger with icon disabled
+//Disabled danger button with icon
 export const DangerDisabledIconLeft = () => (
   <Button cls="button_icon danger_button_disabled_state" clsIcon="left_icon" border="none" iconStroke={$white} fn={action('primary focus button')}>
     <p className="button_icon_text">BUTTON</p>
