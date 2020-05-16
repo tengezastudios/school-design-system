@@ -299,6 +299,9 @@ body {
     display: flex;
 }
 
+.tag-base-style{
+    background-color: $gray-90;
+}
 //CHECKBOX STYLES
 .unselected-checkbox{
     width: $spacing-03;
