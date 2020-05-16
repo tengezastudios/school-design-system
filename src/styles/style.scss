@@ -73,6 +73,8 @@ body {
     display: flex;
     color: $white;
     cursor: pointer;
+    text-align: center;
+    border-radius: $radius-micro;
 }
 
 .button_icon {
@@ -84,6 +86,7 @@ body {
     color: $white;
     cursor: pointer;
     position: relative;
+    border-radius: $radius-small;
 }
 
 .left_icon {
@@ -147,6 +150,7 @@ body {
     width: fit-content;
     padding: $spacing-01;
     border: solid 2px $blue-50;
+    border-radius: $radius-small;
 }
 
 //PRIMARY BUTTON STYLES
@@ -227,7 +231,7 @@ body {
 
 .link-container-focus{
     border: solid 1px $blue-50;
-    padding: 2px $spacing-01;
+    padding: $spacing-01 $spacing-01;
 }
 
 .link-body-01{

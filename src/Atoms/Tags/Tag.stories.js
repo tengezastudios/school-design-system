@@ -7,9 +7,9 @@ export default {
   component: Tag
 };
 
-
-// tag base
-export const TagBase = () => (<Tag cls="tag-container tag-text">Tag label</Tag>);
+//tag base
+// tag single
+export const TagSingle = () => (<Tag cls="tag-container tag-text">Tag label</Tag>);
 
 //tag interactive
 export const TagInteractive = () => (<Tag cls="tag-container-interactive tag-text">
