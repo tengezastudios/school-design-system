@@ -68,6 +68,7 @@ body {
 //BUTTON STYLING
 
 .button {
+    position: relative;
     width: 6.5rem;
     height: 2.5rem;
     display: flex;
@@ -86,7 +87,7 @@ body {
     color: $white;
     cursor: pointer;
     position: relative;
-    border-radius: $radius-small;
+    border-radius: $radius-micro;
 }
 
 .left_icon {
@@ -114,7 +115,8 @@ body {
 }
 
 .button_text{
-    margin: auto;
+    position: absolute;
+    left: 24px;
     @include button('Rubik');
     font-family: 'Rubik', sans-serif;
 }
@@ -302,6 +304,8 @@ body {
 .tag-base-style{
     background-color: $gray-90;
 }
+
+
 //CHECKBOX STYLES
 .unselected-checkbox{
     width: $spacing-03;
