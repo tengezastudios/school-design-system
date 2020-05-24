@@ -117,6 +117,7 @@ body {
 
 .button_text{
     position: absolute;
+    bottom: -3px;
     left: $spacing-05;
     @include button('Rubik');
     font-family: 'Rubik', sans-serif;
