@@ -79,7 +79,7 @@ body {
 
 .button_icon {
     justify-content: center;
-    width: 8.25rem;
+    width: $spacing-10;
     height: 2.563rem;
     display: flex;
     align-items: center;
@@ -122,7 +122,7 @@ body {
 .button_icon_text{
     position: absolute;
     @include button('Rubik');
-    left: 3.5rem;
+    left: $spacing-07;
     margin: auto;
     font-family: 'Rubik', sans-serif;
 }
