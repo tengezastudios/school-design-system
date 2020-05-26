@@ -1,5 +1,6 @@
-@import 'typography/typography-tokens';
+@import 'colors/color-tokens';
 @import 'colors/color-use-tokens';
+@import 'typography/typography-tokens';
 @import 'spacing/spacing-tokens';
 @import 'spacing/radius-tokens';
 
@@ -7,8 +8,9 @@ body {
     background-color: $ui-background;
 }
 
-// Typography styling
-//HEADINGS
+//TYPOGRAPHY STYLING
+
+//Headings
 #heading-01{
     @include heading-01($font-name);
 }
@@ -33,7 +35,7 @@ body {
     @include heading-06($font-name);
 }
 
-//SUBTITLES
+//Subtitles
 #subtitle-01 {
     @include subtitle-01($font-name);
 }
@@ -42,7 +44,7 @@ body {
     @include subtitle-02($font-name);
 }
 
-//BODY
+//Body
 #body-01 {
     @include body-01($font-name);
 }
@@ -51,7 +53,7 @@ body {
     @include body-02($font-name);
 }
 
-//SUPPORTIVE
+//Supportive
 #button {
     @include button($font-name);
 }
@@ -63,11 +65,13 @@ body {
 #overline {
     @include overline($font-name);
 }
-//typography styling end
+
+//TYPOGRAPHY STYLING END
 
 
 //BUTTON STYLING
 
+//General button styles
 .button {
     position: relative;
     width: 6.5rem;
@@ -110,7 +114,6 @@ body {
     color: $white;
 }
 
-
 .button_hide_focus{
     border:none;
 }
@@ -130,7 +133,6 @@ body {
     margin: auto;
     font-family: 'Rubik', sans-serif;
 }
-
 
 .button_tertiary_text{
     position: absolute;
@@ -157,7 +159,7 @@ body {
     border-radius: $radius-small;
 }
 
-//PRIMARY BUTTON STYLES
+//Primary button styles
 .primary_button_active_state {
     background-color: $blue-50;
 }
@@ -174,24 +176,7 @@ body {
     background-color: $gray-70;
 }
 
-//TERTIARY BUTTON STYLES
-.tertiary_button_active_state {
-    background-color: none;
-}
-
-.tertiary_button_hover_state {
-    background-color: $gray-80;
-}
-
-.tertiary_button_clicked_state{
-    background-color: none;
-}
-
-.tertiary_button_disabled_state{
-    background-color: none;
-}
-
-//SECONDARY BUTTON STYLES
+//Secondary button styles
 .secondary_button_active_state {
     background-color: $gray-20;
 }
@@ -208,8 +193,24 @@ body {
     background-color: $gray-70;
 }
 
+//Tertiary button styles
+.tertiary_button_active_state {
+    background-color: none;
+}
 
-//DANGER BUTTON STYLES
+.tertiary_button_hover_state {
+    background-color: $gray-80;
+}
+
+.tertiary_button_clicked_state{
+    background-color: none;
+}
+
+.tertiary_button_disabled_state{
+    background-color: none;
+}
+
+//Danger button styles
 .danger_button_active_state {
     background-color: $red-50;
 }
@@ -226,8 +227,11 @@ body {
     background-color: $gray-70;
 }
 
+//BUTTON STYLING END
+
 
 //LINK STYLES
+
 .link-container{
     width: fit-content;
     height: fit-content;
@@ -264,9 +268,13 @@ body {
     color: $gray-70;
 }
 
+//LINK STYLING END
+
+
 //TAG STYLES
+
 .tag-container{
-    margin: $spacing-02;
+   margin: $spacing-02;
    display: flex;
    align-items: center; 
    justify-content: center;
@@ -303,12 +311,17 @@ body {
     display: flex;
 }
 
+
 .tag-base-style{
     background-color: $gray-90;
 }
 
+//TAG STYLING END
+
+
 
 //CHECKBOX STYLES
+
 .unselected-checkbox{
     width: $spacing-03;
     height: $spacing-03;
@@ -372,6 +385,7 @@ body {
     right: 27%;
     top: 27%;
 }
+
 
 .select-line {
     background-color: $gray-10;
@@ -504,3 +518,5 @@ body {
     margin: $spacing-01;
     cursor: pointer;
 }
+//CHECKBOX STYLING END
+

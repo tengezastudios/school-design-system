@@ -7,23 +7,25 @@ export default {
   component: Checkbox
 };
 
-// checkbox unselected active
+
+//Active unselected checkbox
+
 export const UnselectedActive = () => (<Checkbox cls="unselected-checkbox" />);
 
-// checkbox unselected disabled
+//Disabled unselected checkbox 
 export const UnselectedDisabled = () => (<Checkbox cls="unselected-checkbox unselected-checkbox-disabled" />);
 
-// checkbox unselected focus active
+//Active focused unselected checkbox
 export const UnselectedActiveFocus = () => (<div className="unselected-checkbox-focus">
     <Checkbox cls="unselected-checkbox" />
     </div>);
 
-// checkbox unselected focus disabled
+//Disabled focused unselected checkbox
 export const UnselectedDisabledFocus = () => (<div className="unselected-checkbox-focus">
     <Checkbox cls="unselected-checkbox unselected-checkbox-disabled" />
     </div>);    
 
-// checkbox selected active
+//Active selected checkbox
 export const SelectedActive = () => (
     <Checkbox cls="unselected-checkbox selected-container">
         <div style={{width: '6px', height: '6px'}} className="select-block">
@@ -32,7 +34,7 @@ export const SelectedActive = () => (
     </Checkbox>
     );    
 
-// checkbox selected focus
+//Focused selected checkbox
 export const SelectedActiveFocus = () => (<div className="unselected-checkbox-focus">
      <Checkbox cls="unselected-checkbox selected-container">
         <div style={{width: '6px', height: '6px'}} className="select-block">
@@ -41,7 +43,7 @@ export const SelectedActiveFocus = () => (<div className="unselected-checkbox-fo
     </Checkbox>
     </div>);    
 
-// checkbox selected disabled
+//Disabled selected checkbox
 export const SelectedDisabled = () => (
     <Checkbox cls="unselected-checkbox unselected-checkbox-disabled selected-container">
         <div style={{width: '6px', height: '6px'}} className="select-block-disabled">
@@ -50,7 +52,7 @@ export const SelectedDisabled = () => (
     </Checkbox>
     );   
     
-// checkbox selected disabled focus
+//Disabled focused selected checkbox
 export const SelectedDisabledFocus = () => (
     <div className="unselected-checkbox-focus">
 <Checkbox cls="unselected-checkbox unselected-checkbox-disabled selected-container">
@@ -59,6 +61,7 @@ export const SelectedDisabledFocus = () => (
         </div>
     </Checkbox>
     </div>
+
     
     );       
 
@@ -102,4 +105,5 @@ export const SelectedDisabledFocusIndeterminate = () => (
         </div>
     </Checkbox>
     </div>  
-    );           
+    );        
+    );    

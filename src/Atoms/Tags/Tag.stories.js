@@ -16,10 +16,15 @@ export const TagBase = () => (<Tag cls="tag-base-style tag-container-interactive
   </Tag>);
 
 
+
 // tag single
 export const TagSingle = () => (<Tag cls="tag-container tag-text">Tag label</Tag>);
 
-//tag interactive
+//Base tag
+export const TagBase = () => (<Tag cls="tag-container tag-text">Tag label</Tag>);
+
+
+//Interactive tag
 export const TagInteractive = () => (<Tag cls="tag-container-interactive tag-text">
   Tag label
     <svg className="interactive-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,14 +33,14 @@ export const TagInteractive = () => (<Tag cls="tag-container-interactive tag-tex
     </svg>
   </Tag>);
 
-//tag base group 
+//Base tag group
 export const TagBaseGroup = () => (<div className="base-group">
 <Tag cls="tag-container tag-text">Tag label</Tag>
 <Tag cls="tag-container tag-text">Tag label</Tag>
 <Tag cls="tag-container tag-text">Tag label</Tag>
 </div>)
 
-//tag interactive group
+//Interactive tag group
 export const TagInteractiveGroup = () => (<div className="base-group">
 <Tag cls="tag-container-interactive tag-text">
   Tag label
