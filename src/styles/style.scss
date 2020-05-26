@@ -322,6 +322,7 @@ body {
     display: inline;
     color: $gray-10;
     position: relative;
+    padding: 0;
     left: 20px;
     bottom: 2px;
     @include body-02('Rubik');
@@ -334,11 +335,11 @@ body {
 }
 
 .unselected-checkbox-disabled::after{
-   
     content: 'Option';
     display: inline;
     color: $gray-70;
     position: relative;
+    padding: 0;
     left: 20px;
     bottom: 2px;
     @include body-02('Rubik');
