@@ -9,6 +9,7 @@ export default {
 
 
 //Active unselected checkbox
+
 export const UnselectedActive = () => (<Checkbox cls="unselected-checkbox" />);
 
 //Disabled unselected checkbox 
@@ -60,4 +61,49 @@ export const SelectedDisabledFocus = () => (
         </div>
     </Checkbox>
     </div>
+
+    
+    );       
+
+
+// checkbox selected active with indeterminate
+export const SelectedActiveIndeterminate = () => (
+    <Checkbox cls="unselected-checkbox selected-container">
+        <div style={{width: '6px'}} className="select-line">
+
+        </div>
+    </Checkbox>
+    );    
+     
+    
+// checkbox selected focus indeterminate
+export const SelectedActiveFocusIndeterminate = () => (
+<div className="unselected-checkbox-focus">
+     <Checkbox cls="unselected-checkbox selected-container">
+        <div style={{width: '6px'}} className="select-line">
+
+        </div>
+    </Checkbox>
+    </div>
+    );    
+
+// checkbox selected disabled indeterminate
+export const SelectedDisabledIndeterminate = () => (
+    <Checkbox cls="unselected-checkbox unselected-checkbox-disabled selected-container">
+        <div style={{width: '6px'}} className="select-line-disabled">
+
+        </div>
+    </Checkbox>
+    );   
+    
+// checkbox selected disabled focus
+export const SelectedDisabledFocusIndeterminate = () => (
+    <div className="unselected-checkbox-focus">
+<Checkbox cls="unselected-checkbox unselected-checkbox-disabled selected-container">
+        <div style={{width: '6px'}} className="select-line-disabled">
+
+        </div>
+    </Checkbox>
+    </div>  
+    );        
     );    

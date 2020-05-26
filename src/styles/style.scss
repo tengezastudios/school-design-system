@@ -68,26 +68,31 @@ body {
 
 //TYPOGRAPHY STYLING END
 
+
 //BUTTON STYLING
 
 //General button styles
 .button {
+    position: relative;
     width: 6.5rem;
     height: 2.5rem;
     display: flex;
     color: $white;
     cursor: pointer;
+    text-align: center;
+    border-radius: $radius-micro;
 }
 
 .button_icon {
     justify-content: center;
-    width: 8.25rem;
+    width: $spacing-10;
     height: 2.563rem;
     display: flex;
     align-items: center;
     color: $white;
     cursor: pointer;
     position: relative;
+    border-radius: $radius-micro;
 }
 
 .left_icon {
@@ -114,7 +119,9 @@ body {
 }
 
 .button_text{
-    margin: auto;
+    position: absolute;
+    bottom: -3px;
+    left: $spacing-05;
     @include button('Rubik');
     font-family: 'Rubik', sans-serif;
 }
@@ -122,7 +129,7 @@ body {
 .button_icon_text{
     position: absolute;
     @include button('Rubik');
-    left: 3.5rem;
+    left: $spacing-07;
     margin: auto;
     font-family: 'Rubik', sans-serif;
 }
@@ -149,6 +156,7 @@ body {
     width: fit-content;
     padding: $spacing-01;
     border: solid 2px $blue-50;
+    border-radius: $radius-small;
 }
 
 //Primary button styles
@@ -284,7 +292,7 @@ body {
 
 .tag-container-interactive{
     margin: $spacing-02;
-    padding: 0 12px;
+    padding: 0 $spacing-03;
     display: flex;
     align-items: center; 
     justify-content: center;
@@ -303,7 +311,13 @@ body {
     display: flex;
 }
 
+
+.tag-base-style{
+    background-color: $gray-90;
+}
+
 //TAG STYLING END
+
 
 
 //CHECKBOX STYLES
@@ -321,6 +335,7 @@ body {
     display: inline;
     color: $gray-10;
     position: relative;
+    padding: 0;
     left: 20px;
     bottom: 2px;
     @include body-02('Rubik');
@@ -333,11 +348,11 @@ body {
 }
 
 .unselected-checkbox-disabled::after{
-   
     content: 'Option';
     display: inline;
     color: $gray-70;
     position: relative;
+    padding: 0;
     left: 20px;
     bottom: 2px;
     @include body-02('Rubik');
@@ -371,4 +386,137 @@ body {
     top: 27%;
 }
 
+
+.select-line {
+    background-color: $gray-10;
+    border: solid 1px $gray-10;
+    position: absolute;
+    top: 45%;
+    left: 2px;
+    border-radius: 1px;
+}
+
+.select-line-disabled{
+    border-radius: 1px;
+    background-color: $gray-70;
+    position: absolute;
+    border: solid 1px $gray-70;
+    left: 2px;
+    top: 45%;
+}
+
+// TOGGLE STYLES
+
+.toggle-and-label-container{
+    display: grid;
+    width: 66px;
+    height: 46px;
+}
+
+.toggle-label{
+    font-family: 'Rubik', sans-serif;  
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: $gray-30;
+    width: fit-content;
+    width: 150px;
+    margin-bottom: $spacing-02;
+}
+
+.toggle-container-off{
+    position: relative;
+    width: 48px;
+    height: 24px;
+    border-radius: $radius-medium;
+    background-color: $gray-70;
+}
+
+.toggle-button-off{
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    border-radius: $radius-full;
+    background-color: $white;
+    margin: $spacing-01;
+    cursor: pointer;
+}
+
+.toggle-container-on{
+    position: relative;
+    width: 48px;
+    height: 24px;
+    border-radius: $radius-medium;
+    background-color: $blue-50;
+}
+
+.toggle-button-on{
+    position: absolute;
+    right: 0;
+    width: 1rem;
+    height: 1rem;
+    border-radius: $radius-full;
+    background-color: $white;
+    margin: $spacing-01;
+    cursor: pointer;
+}
+
+
+// small toggle 
+.small-toggle-and-label-container{
+    display: grid;
+    width: 2rem;
+    height: 1rem;
+}
+
+.small-toggle-label{
+    font-family: 'Rubik', sans-serif;  
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: $gray-30;
+    width: fit-content;
+    width: 150px;
+    margin-bottom: $spacing-02;
+}
+
+.small-toggle-container-off{
+    position: relative;
+    width: 32px;
+    height: 16px;
+    border-radius: $radius-medium;
+    background-color: $gray-70;
+}
+
+.small-toggle-button-off{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: $radius-full;
+    background-color: $white;
+    margin: $spacing-01;
+    cursor: pointer;
+}
+
+.small-toggle-container-on{
+    position: relative;
+    width: 32px;
+    height: 16px;
+    border-radius: $radius-medium;
+    background-color: $blue-50;
+}
+
+.small-toggle-button-on{
+    position: absolute;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: $radius-full;
+    background-color: $white;
+    margin: $spacing-01;
+    cursor: pointer;
+}
 //CHECKBOX STYLING END
+
