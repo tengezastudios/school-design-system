@@ -119,8 +119,8 @@ body {
     position: absolute;
     bottom: -3px;
     left: $spacing-05;
-    @include button('Rubik');
-    font-family: 'Rubik', sans-serif;
+    @include button('Rubik-Regular');
+    font-family: 'Rubik-Regular', sans-serif;
 }
 
 .button_icon_text{
@@ -388,6 +388,27 @@ body {
     border: solid 1px $gray-70;
     left: 2px;
     top: 45%;
+}
+
+.group-label{
+    @include caption('Rubik');
+    font-family: 'Rubik', sans-serif;  
+    color: $gray-30;
+}
+
+.group-label-horizontal{
+    color: $gray-30;
+    @include caption('Rubik');
+    font-family: 'Rubik', sans-serif;
+    margin: $spacing-03;
+}
+
+.group-items-vertical{
+    margin: $spacing-03 0;
+}
+
+.group-items-horizontal{
+    margin: 0 $spacing-06;
 }
 
 // TOGGLE STYLES

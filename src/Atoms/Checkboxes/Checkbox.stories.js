@@ -103,3 +103,25 @@ export const SelectedDisabledFocusIndeterminate = () => (
     </Checkbox>
     </div>  
     );           
+
+// checkbox groups vertical
+export const CheckboxGroupVertical = () => (
+    <div style={{display: 'grid'}}>
+        <span className="group-label">Group label</span>
+        <Checkbox cls="unselected-checkbox group-items-vertical" />
+        <Checkbox cls="unselected-checkbox group-items-vertical" />
+        <Checkbox cls="unselected-checkbox group-items-vertical" />
+    </div>
+);
+
+// checkbox groups horizontal
+export const CheckboxGroupHorizontal = () => (
+    <>
+    <span className="group-label-horizontal">Group label</span>
+   <div style={{display: 'flex'}}>
+        <Checkbox cls="unselected-checkbox group-items-horizontal" />
+        <Checkbox cls="unselected-checkbox group-items-horizontal" />
+        <Checkbox cls="unselected-checkbox group-items-horizontal" />
+    </div>
+    </>
+);
