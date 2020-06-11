@@ -36,11 +36,11 @@ export const ToggleBigBaseAnimated = () => {
     <Toggle cls="toggle-and-label-container">
         <span className="toggle-label">Toggle label</span>
         <motion.div className="toggle-container-off"
+             onClick={() => setToggle(!isToggled)}
             animate={isToggled ? "backgroundOn" : "backgroundOff"}
             variants={variantsToggle}
         >
             <motion.div className="toggle-button-off" 
-             onClick={() => setToggle(!isToggled)}
              animate={isToggled ? "on" : "offBig"}
              variants={variantsToggle}
             ></motion.div>
@@ -55,10 +55,10 @@ export const ToggleSmallBaseAnimated = () => {
         <Toggle cls="small-toggle-and-label-container">
             <span className="small-toggle-label">Toggle label</span>
             <motion.div className="small-toggle-container-off"
+                onClick={() => setToggle(!isToggled)}
                 animate={isToggled ? "backgroundOn" : "backgroundOff"}
                 variants={variantsToggle}>
                <motion.div className="small-toggle-button-off" id="toggle-button"
-                onClick={() => setToggle(!isToggled)}
                 animate={isToggled ? "on" : "off"}
                 variants={variantsToggle}
                  ></motion.div>
