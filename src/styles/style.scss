@@ -307,6 +307,68 @@ body {
     background-color: $gray-90;
 }
 
+//RADIO BUTTON STYLING
+.unselected-radio{
+    width: $spacing-03;
+    height: $spacing-03;
+    border: solid 1px $gray-10;
+    border-radius: 50%;
+    display: grid;
+}
+
+.unselected-radio::after{
+    content: 'Option';
+    display: inline;
+    color: $gray-10;
+    position: relative;
+    left: 20px;
+    bottom: 2px;
+    @include body-02('Rubik');
+    font-family: 'Rubik', sans-serif;
+}
+
+.unselected-radio-disabled{
+    border: solid 1px $gray-70;
+    display: grid;
+}
+
+.unselected-radio-disabled::after{
+    content: 'Option';
+    display: inline;
+    color: $gray-70;
+    position: relative;
+    left: 20px;
+    bottom: 2px;
+    @include body-02('Rubik');
+    font-family: 'Rubik', sans-serif;  
+}
+
+.unselected-radio-focus{
+    border: solid 1px $blue-50;
+    padding: $spacing-01;
+    width: 72px;
+    height: fit-content;
+}
+
+.select-radio{
+    border-radius: 50%;
+    background-color: $gray-10;
+    position: absolute;
+    right: 27%;
+    top: 27%;
+}
+
+.select-radio-disabled{
+    border-radius: 50%;
+    background-color: $gray-70;
+    position: absolute;
+    right: 27%;
+    top: 27%;
+    width: 8px;
+    height: 8px;
+}
+
+
 
 //CHECKBOX STYLES
 .unselected-checkbox{
@@ -526,3 +588,4 @@ body {
     margin: $spacing-01;
     cursor: pointer;
 }
+
