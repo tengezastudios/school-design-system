@@ -368,8 +368,6 @@ body {
     height: 8px;
 }
 
-
-
 //CHECKBOX STYLES
 .unselected-checkbox{
     width: $spacing-03;
@@ -589,3 +587,68 @@ body {
     cursor: pointer;
 }
 
+//PASSWORD INPUT STYLE
+.password-input-container{
+        /* Auto Layout */
+        display: grid;
+        display: -ms-grid;
+        row-gap: 8px;
+        width: fit-content;
+        position: relative;
+}
+
+.password-label-container{
+        @include caption($font-name);
+        font-family: 'Rubik-Regular', sans-serif;
+        /* $gray-30 */
+        color: $gray-30;
+}
+
+.password-input-field{
+        width: 226px;
+        height: auto;
+        @include body-02($font-name);
+        font-family: 'Rubik-Regular', sans-serif;
+        padding: 12px 16px;
+        color: $gray-10;
+        border-radius: $radius-micro;
+        border: none;
+        background-color: $gray-90;
+
+}
+
+
+.password-icon{
+    position: absolute;
+    top: 66.5%;
+    right: 16px;
+    cursor: pointer;
+}
+
+.error-icon{
+    position: absolute;
+    top: 68%;
+    right: 16px;
+    cursor: pointer;
+}
+
+.error{
+    border: solid 1px red;
+}
+
+.error-text{
+    @include caption($font-name);
+    font-family: 'Rubik-Regular', sans-serif;
+    color: red;
+    position: absolute;
+    top: 90%;
+    right: 0;
+}
+
+.disabled{
+    color: $gray-70 !important;
+}
+
+.disabled-placeholder{
+    color: $gray-70 !important;
+}
