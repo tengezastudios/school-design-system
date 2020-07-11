@@ -28,6 +28,6 @@ export const TextInputError = () => (
     <TextInput cls="text-input-container">  
     <p className="text-label-container disabled">Input label</p>
     <input className="text-input-field disabled-placeholder error" type="text" placeholder="Placeholder Input"/>  
-          <p className="error-text">Wrong password</p>   
+          <p className="error-text">Error text</p>   
     </TextInput>
   );
