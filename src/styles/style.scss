@@ -647,8 +647,38 @@ body {
 
 .disabled{
     color: $gray-70 !important;
-}
+} 
 
 .disabled-placeholder{
     color: $gray-70 !important;
+}
+
+//TEXT INPUT STYLE
+.text-input-container{
+    /* Auto Layout */
+    display: grid;
+    display: -ms-grid;
+    row-gap: 8px;
+    width: fit-content;
+    position: relative;
+}
+
+.text-label-container{
+    @include caption($font-name);
+    font-family: 'Rubik-Regular', sans-serif;
+    /* $gray-30 */
+    color: $gray-30;
+}
+
+.text-input-field{
+    width: 226px;
+    height: auto;
+    @include body-02($font-name);
+    font-family: 'Rubik-Regular', sans-serif;
+    padding: 12px 16px;
+    color: $gray-10;
+    border-radius: $radius-micro;
+    border: none;
+    background-color: $gray-90;
+
 }
