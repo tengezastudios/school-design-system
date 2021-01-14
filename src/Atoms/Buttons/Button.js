@@ -14,7 +14,7 @@ export const Button = ({cls, children, border, fn, icon, clsIcon, iconStroke, d}
               style={{
                   display: {icon}
               }}
-                    width="16"
+                    width="16" 
                     height="16" 
                     viewBox="0 0 16 16" 
                     fill="none" 

@@ -10,7 +10,7 @@ export default {
 
 const $blue50  = '#2662d9';
 const $blue40 = '#1f4ead';
-const $gray70 = "#b2b2b2";
+const $gray70 = "#b2b2b2"; 
 const $white = "#fff";
 
 
