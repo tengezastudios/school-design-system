@@ -682,3 +682,39 @@ body {
     background-color: $gray-90;
 
 }
+
+//DROPDOWN STYLES
+.dropdown-label{
+    @include caption($font-name);
+    font-family: 'Rubik-Regular', sans-serif;
+    color: $gray-30;
+}
+
+.dropdown-base{
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-picker{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: $spacing-065;
+    background-color: $gray-90;
+    border-radius: $radius-micro;
+    cursor: pointer;
+}
+
+.choice{
+    padding-left: $spacing-04;
+    @include body-02($font-name);
+    font-family: 'Rubik-Regular', sans-serif;
+    color: $gray-40;
+}
+
+.icon-down{
+    position: absolute;
+    right: $spacing-04;
+}
