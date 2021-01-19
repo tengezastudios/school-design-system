@@ -691,7 +691,7 @@ body {
 }
 
 .dropdown-base{
-    width: 16rem;
+    width: $spacing-12;
     display: flex;
     flex-direction: column;
 }
@@ -718,3 +718,34 @@ body {
     position: absolute;
     right: $spacing-04;
 }
+
+.dropdown-list{
+    margin-top: $spacing-01;
+    max-height: $spacing-12;
+    display: flex;
+    flex-direction: column;
+    width: $spacing-12;
+}
+
+.option{
+    @include body-02($font-name);
+    font-family: 'Rubik-Regular', sans-serif;
+    width: 100%;
+    height: $spacing-065;
+    background-color: $gray-90;
+    border-bottom: 1px solid $gray-80;
+    color: $gray-40;
+    align-items: center;
+    display: flex;
+    border-radius: $radius-micro;
+    cursor: pointer;
+}
+
+.option span{
+    margin-left: $spacing-04;
+}
+
+.option:hover{
+    color: $gray-10;
+}
+

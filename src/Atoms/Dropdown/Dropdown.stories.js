@@ -18,6 +18,9 @@ export const DropdownBase = () => (
                     </svg>
             </div>
             <div className="dropdown-list">
+                <div className="option"><span >Option 1</span></div>
+                <div className="option"><span >Option 2</span></div>
+                <div className="option"><span >Option 3</span></div>
             </div>
         </Dropdown>
 );
