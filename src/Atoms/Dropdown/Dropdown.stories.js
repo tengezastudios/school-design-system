@@ -8,22 +8,36 @@ export default {
 };
 
 // Dropdown Base
-export const DropdownBase = () => (
+export const DropdownBase = () => {
+    const [dropOpen, setDrop] = React.useState(false);
+    const [optionSelected, setOption] = React.useState('Placeholder');
+    return (
         <Dropdown cls="dropdown-base">  
             <p className="dropdown-label">Dropdown label</p>
-            <div className="dropdown-picker">
-                <span className="choice">Placeholder 1</span>
+            <div className="dropdown-picker" onClick={() => {
+                dropOpen ? setDrop(false) : setDrop(true)
+            }}>
+                <span className="choice">{optionSelected}</span>
                 <svg className="icon-down" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4 6L8 10L12 6" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
             </div>
-            <div className="dropdown-list">
-                <div className="option"><span >Option 1</span></div>
-                <div className="option"><span >Option 2</span></div>
-                <div className="option"><span >Option 3</span></div>
+            <div className="dropdown-list" style={{ display: dropOpen ? 'flex' : 'none'}} >
+                <div className="option" onClick={() => {
+                    setOption('Option 1')
+                    setDrop(false)
+                }}><span >Option 1</span></div>
+                <div className="option" onClick={() => {
+                    setOption('Option 2')
+                    setDrop(false)
+                }}><span >Option 2</span></div>
+                <div className="option" onClick={() => {
+                    setOption('Option 3')
+                    setDrop(false)
+                }}><span >Option 3</span></div>
             </div>
         </Dropdown>
-);
+)};
 
 //Dropdown Error
 export const DropdownError = () => (
