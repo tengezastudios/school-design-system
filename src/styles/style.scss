@@ -645,9 +645,13 @@ body {
     right: 0;
 }
 
-.disabled{
+.disabled-txt{
     color: $gray-70 !important;
 } 
+
+.disabled-bg{
+    background-color: $gray-90;
+}
 
 .disabled-placeholder{
     color: $gray-70 !important;
@@ -746,6 +750,174 @@ body {
 }
 
 .option:hover{
+    color: $gray-10;
+}
+
+.error{
+    border: 1px solid $red-50;
+}
+
+.small-error-text{
+    @include caption($font-name);
+    font-family: 'Rubik-Regular', sans-serif;
+    color: $red-50;
+    margin-top: $spacing-02;
+    align-self: end;
+}
+
+.disabled-text{
+    color: $gray-70;
+}
+
+.icon-down-disabled{
+    opacity: 0.2;
+}
+
+.datepicker-container{
+    display: block;
+}
+
+.fields-container{
+    display: flex;
+    flex-direction: row;
+    width: $spacing-12;
+    height: $spacing-065;
+    margin-top: $spacing-01;
+}
+
+.day{
+    width: $spacing-07;
+    border-radius: $radius-micro;
+    background-color: $gray-90;
+    display: flex;
+}
+
+.day-input{
+    margin: auto;
+    text-align: center;
+    @include body-02($font-name);
+    font-family: 'Rubik-Regular', sans-serif;
+    color: $gray-40;
+    width: 80%;
+    background-color: $gray-90;
+    border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input::placeholder{
+    color: $gray-40;
+}
+.month{
+        margin-left: $spacing-02;
+        width: $spacing-09;
+        resize: both;
+        border-radius: $radius-micro;
+        background-color: $gray-90;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+}
+
+.selector{
+    position: absolute;
+    width: auto;
+    height: 100%;
+    border: none;
+    border-radius: $radius-micro;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+    }
+
+.selector span{
+    @include body-02($font-name);
+    font-family: 'Rubik-Regular', sans-serif;
+    color: $gray-40;
+    position: relative;
+    left: $spacing-04;
+}    
+
+.icon-d{
+    position: relative;
+    left: 1.25rem;
+}
+
+.months-container{
+    position: absolute;
+    top: 100%;
+    margin-top: $spacing-01;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    background-color: $gray-90;
+    border-radius: $radius-micro;
+}
+
+.months-container div{
+    width: 100%;
+    height: $spacing-065;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    @include body-02($font-name);
+    font-family: 'Rubik-Regular', sans-serif;
+    color: $gray-40;
+    border-bottom: 1px solid $gray-80;
+}
+
+.months-container div:hover{
+    color: $gray-10;
+}
+
+
+.year{
+    margin-left: $spacing-02;
+    width: $spacing-085;
+    border-radius: $radius-micro;
+    background-color: $gray-90;
+    display: flex;
+    flex-direction: row;
+    position: relative; 
+}
+
+.year input{
+    padding-top: $spacing-01;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    border: none;
+    width: $spacing-05;
+    right: $spacing-02;
+    top: $spacing-02;
+    @include body-02($font-name);
+    font-family: 'Rubik-Regular', sans-serif;
+    color: $gray-10;
+}
+
+.year input::placeholder{
+    padding-top: 3px;
+}
+
+.year span{
+    position: absolute;
+    top: $spacing-03;
+    left: $spacing-04;
+    @include body-02($font-name);
+    font-family: 'Rubik-Regular', sans-serif;
     color: $gray-10;
 }
 
