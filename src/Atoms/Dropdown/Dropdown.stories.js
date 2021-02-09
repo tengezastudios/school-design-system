@@ -2,10 +2,19 @@ import React from 'react';
 import '../../styles/style.scss';
 import { Dropdown } from './Dropdown';
 
+import { motion } from 'framer-motion'; 
+
 export default {
   title: 'Dropdown',
   component: Dropdown
 };
+
+const tween = {
+    type: "tween",
+    delay: "0",
+    duration: "2",
+    ease: [0.44, 0, 0.56, 1]
+}
 
 // Dropdown Base
 export const DropdownBase = () => {
@@ -22,7 +31,7 @@ export const DropdownBase = () => {
                     <path d="M4 6L8 10L12 6" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
             </div>
-            <div className="dropdown-list" style={{ display: dropOpen ? 'flex' : 'none'}} >
+            <motion.div initial={{ display: !dropOpen ? 'flex' : 'none'}} transition={tween} animate={{ display: dropOpen ? 'flex' : 'none'}} className="dropdown-list">
                 <div className="option" onClick={() => {
                     setOption('Option 1')
                     setDrop(false)
@@ -35,7 +44,7 @@ export const DropdownBase = () => {
                     setOption('Option 3')
                     setDrop(false)
                 }}><span >Option 3</span></div>
-            </div>
+            </motion.div>
         </Dropdown>
 )};
 

@@ -28,6 +28,5 @@ export const Button = ({cls, children, border, fn, icon, clsIcon, iconStroke, d}
 
         {children}
         </div>
-    </div>
-    
+    </div>   
 )
