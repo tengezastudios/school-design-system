@@ -728,7 +728,8 @@ body {
     max-height: $spacing-12;
     flex-direction: column;
     width: $spacing-12;
-    display: flex;
+    transition: ease-in-out;
+    animation: slidedown .3s forwards;
 }
 
 .option{
@@ -743,6 +744,7 @@ body {
     display: flex;
     border-radius: $radius-micro;
     cursor: pointer;
+    animation: fadein 0.3 forwards;
 }
 
 .option span{
@@ -863,6 +865,8 @@ input::placeholder{
     flex-direction: column;
     background-color: $gray-90;
     border-radius: $radius-micro;
+    transition: ease-in-out;
+    animation: slidedown .3s forwards;
 }
 
 .months-container div{
@@ -877,6 +881,10 @@ input::placeholder{
     font-family: 'Rubik-Regular', sans-serif;
     color: $gray-40;
     border-bottom: 1px solid $gray-80;
+}
+
+.month {
+    animation: fadein .2s forwards;
 }
 
 .months-container div:hover{
@@ -921,3 +929,13 @@ input::placeholder{
     color: $gray-10;
 }
 
+@keyframes fadein {
+    0%   {opacity: 0.3;}
+    50% {opacity: 0.7;}
+    100% {opacity: 1;}
+}
+
+@keyframes slidedown {
+    0% {height: 0px;}
+    100% { height: auto;}
+}  

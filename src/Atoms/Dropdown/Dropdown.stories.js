@@ -31,7 +31,7 @@ export const DropdownBase = () => {
                     <path d="M4 6L8 10L12 6" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
             </div>
-            <motion.div initial={{ display: !dropOpen ? 'flex' : 'none'}} transition={tween} animate={{ display: dropOpen ? 'flex' : 'none'}} className="dropdown-list">
+            <div transition={tween} style={{ display: dropOpen ? 'flex' : 'none'}} className="dropdown-list">
                 <div className="option" onClick={() => {
                     setOption('Option 1')
                     setDrop(false)
@@ -44,7 +44,7 @@ export const DropdownBase = () => {
                     setOption('Option 3')
                     setDrop(false)
                 }}><span >Option 3</span></div>
-            </motion.div>
+            </div>
         </Dropdown>
 )};
 

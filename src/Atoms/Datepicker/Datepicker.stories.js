@@ -28,51 +28,51 @@ export const DatepickerBase = () => {
                     </svg>
                 </div>
                 <div className="months-container" style={{ display: monthOpen ? 'flex' : 'none'}}>
-                  <div onClick={() => {
+                  <div className="month" onClick={() => {
                     setMonth('January')
                     setOpen(false)
                     }}>January</div>
-                  <div onClick={() => {
+                  <div className="month" onClick={() => {
                     setMonth('February')
                     setOpen(false)
                     }}>February</div>
-                  <div onClick={() => {
+                  <div className="month" onClick={() => {
                     setMonth('March')
                     setOpen(false)
                     }}>March</div>
-                  <div onClick={() => {
+                  <div className="month" onClick={() => {
                     setMonth('April')
                     setOpen(false)
                     }}>April</div>
-                  <div onClick={() => {
+                  <div className="month" onClick={() => {
                     setMonth('May')
                     setOpen(false)
                     }}>May</div>
-                  <div onClick={() => {
+                  <div className="month" onClick={() => {
                     setMonth('June')
                     setOpen(false)
                     }}>June</div>
-                  <div onClick={() => {
+                  <div className="month" onClick={() => {
                     setMonth('July')
                     setOpen(false)
                     }}>July</div>
-                  <div onClick={() => {
+                  <div className="month" onClick={() => {
                     setMonth('August')
                     setOpen(false)
                     }}>August</div>
-                  <div onClick={() => {
+                  <div className="month" onClick={() => {
                     setMonth('September')
                     setOpen(false)
                     }}>September</div>
-                  <div onClick={() => {
+                  <div className="month" onClick={() => {
                     setMonth('October')
                     setOpen(false)
                     }}>October</div>
-                  <div onClick={() => {
+                  <div className="month" onClick={() => {
                     setMonth('November')
                     setOpen(false)
                     }}>November</div>
-                  <div onClick={() => {
+                  <div className="month" onClick={() => {
                     setMonth('December')
                     setOpen(false)
                     }}>December</div>
