@@ -2,6 +2,7 @@
 @import 'colors/color-use-tokens';
 @import 'spacing/spacing-tokens';
 @import 'spacing/radius-tokens';
+@import 'animation/animation.scss';
 
 body {
     background-color: $ui-background;
@@ -422,7 +423,7 @@ body {
     position: absolute;
     right: 27%;
     top: 27%;
-    animation: fadein .3s forwards;
+    animation: fadein $animation-01;
     
 }
 
@@ -731,7 +732,7 @@ body {
     flex-direction: column;
     width: $spacing-12;
     transition: ease-in-out;
-    animation: slidedown .3s forwards;
+    animation: slidedown $animation-01;
 }
 
 .option{
@@ -746,7 +747,6 @@ body {
     display: flex;
     border-radius: $radius-micro;
     cursor: pointer;
-    animation: fadein 0.3 forwards;
 }
 
 .option span{
@@ -863,17 +863,17 @@ input::placeholder{
     top: 100%;
     margin-top: $spacing-01;
     width: 100%;
-    height: auto;
+    display: flex;
     flex-direction: column;
     background-color: $gray-90;
     border-radius: $radius-micro;
     transition: ease-in-out;
-    animation: slidedown .3s forwards;
+    animation: slidedown $animation-01;
 }
 
 .months-container div{
-    width: 100%;
-    height: $spacing-065;
+    width: 90%;
+    height: $spacing-065; 
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -883,16 +883,13 @@ input::placeholder{
     font-family: 'Rubik-Regular', sans-serif;
     color: $gray-40;
     border-bottom: 1px solid $gray-80;
+    border-radius: 0;
 }
 
-.month {
-    animation: fadein .2s forwards;
-}
 
 .months-container div:hover{
     color: $gray-10;
 }
-
 
 .year{
     margin-left: $spacing-02;
